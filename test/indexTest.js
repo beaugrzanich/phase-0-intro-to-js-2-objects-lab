@@ -4,8 +4,8 @@ describe('employees', function() {
       for (const key in employee) {
         delete employee[key];
       }
-
       employee.name = 'Sam';
+      return employee
     });
 
     it('returns an employee with the original key value pairs and the new key value pair', function () {
